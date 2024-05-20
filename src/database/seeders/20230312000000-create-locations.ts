@@ -1,11 +1,19 @@
 import { QueryInterface } from 'sequelize'
 
+const locationZero = {
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  location_name: 'Nyabugogo',
+  latitude: -1.939826787816454,
+  longitude: 30.0445426438232,
+}
+
 const locationOne = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Kimironko',
-  latitude: -1.9362376,
-  longitude: 30.130060100000037
+  latitude: -1.9365670876910166,
+  longitude: 30.13020167024439
 }
 const locationTwo = {
   createdAt: new Date(),
@@ -22,36 +30,30 @@ const locationThree = {
   latitude: -1.951542,
   longitude: 30.109847,
 }
-const locationfour = {
+const locationFour = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Kicukiro', 
   latitude: -1.984046,
   longitude: 30.104083
 }
-const locationfive = {
-  createdAt: new Date(),
-  updatedAt: new Date(),
-  location_name: 'Nyabugogo',
-  latitude: -1.942111,
-  longitude: 30.043433,
-}
 
-const locationsix = {
+const locationFive = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Kacyiru',
   latitude:-1.9333928457956164,
   longitude: 30.074104973186625,
 }
-const locationseven = {
+
+const locationSix = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Ndera',
   latitude: -1.9470657791624806,
   longitude: 30.17314183704839
 }
-const locationeight = {
+const locationSeven = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Gisozi',
@@ -59,14 +61,14 @@ const locationeight = {
   longitude: 30.06444467577999,
 }
 
-const locationnine = {
+const locationEight = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Nyanza',
   latitude: -1.983325329359245,
   longitude: 30.102497586212607,
 }
-const locationten = {
+const locationNine = {
   createdAt: new Date(),
   updatedAt: new Date(),
   location_name: 'Gikondo',
@@ -74,6 +76,6 @@ const locationten = {
   longitude: 30.072066497173488,
 }
 
-const up = (queryInterface: QueryInterface) => queryInterface.bulkInsert('locations', [locationOne, locationTwo, locationThree, locationfour, locationfive, locationsix, locationseven, locationeight, locationnine, locationten])
+const up = (queryInterface: QueryInterface) => queryInterface.bulkInsert('locations', [locationZero, locationOne, locationTwo, locationThree, locationFour, locationFive, locationSix, locationSeven, locationEight, locationNine])
 const down = (queryInterface: QueryInterface) => queryInterface.bulkDelete('locations', [], {})
 export { up, down }

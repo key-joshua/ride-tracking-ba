@@ -16,4 +16,4 @@ busRouter
     .post("/assign-bus", userAuthorization(['operator']), validateAssignBus,  busesController.assignBus)
     .put("/update-bus/:id" ,  userAuthorization(['operator']), validateUpdateBus , busesController.updateBus)
 
-export default busRouter
+export default busRouter;

@@ -85,5 +85,4 @@ const getBusesByRoutes = async (orgin:number, destination:number) => {
   return busesInRoute;
 }
 
-
 export default { getBusById, getBusByPlateNumber, getBusesByDriverId, getBuses, deleteBus, createBus, updateBus, assignBus, getBusesByRoutes }
