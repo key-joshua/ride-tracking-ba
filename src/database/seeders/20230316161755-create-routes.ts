@@ -3,7 +3,7 @@ import { QueryInterface  } from 'sequelize'
 const routeZero = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Nyabugogo-Kimironko',
+  route_name: 'Nyabugogo - Kimironko',
   start: 1,
   end: 2,
   stops: [1,2,3,4,5],
@@ -13,7 +13,7 @@ const routeZero = {
 const routeOne = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Kimironko-Nyabugogo',
+  route_name: 'Kimironko - Nyabugogo',
   start: 2,
   end: 1,
   stops: [1,2],
@@ -23,7 +23,7 @@ const routeOne = {
 const routetwo = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Kimironko-Remera',
+  route_name: 'Kimironko - Remera',
   start: 2,
   end: 3,
   stops: [1],
@@ -33,7 +33,7 @@ const routetwo = {
 const routethree = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Kimironko-Gikondo',
+  route_name: 'Kimironko - Gikondo',
   start: 2,
   end: 9,
   stops: [1],
@@ -43,7 +43,7 @@ const routethree = {
 const routefour = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Nyabugogo-Kicukiro',
+  route_name: 'Nyabugogo - Kicukiro',
   start: 1,
   end: 5,
   stops: [1],
@@ -53,7 +53,7 @@ const routefour = {
 const routefive = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Kimironko-ndera',
+  route_name: 'Kimironko - ndera',
   start: 2,
   end: 7,
   stops: [1],
@@ -63,7 +63,7 @@ const routefive = {
 const routeSix = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  route_name: 'Nyabugogo-Remera',
+  route_name: 'Nyabugogo - Remera',
   start: 1,
   end: 3,
   stops: [1],

@@ -7,44 +7,66 @@ const busOne = {
   available_sits: 90,
   driver_id: 1,
   route_id: 1,
-  model: 'XLiu',
-  plate_number: 'RCA125G'
+  model: 'YUTONGO',
+  plate_number: 'RCA 125 G'
 }
 
 const busTwo = {
   createdAt: new Date(),
   updatedAt: new Date(),
-  name: 'KBS',
+  name: 'Stella',
+  available_sits: 30,
+  driver_id: 2,
+  route_id: 1,
+  model: 'XLiu',
+  plate_number: 'RCA 125 E'
+}
+
+const busThree = {
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  name: 'XLiu',
+  available_sits: 90,
+  driver_id: 1,
+  route_id: 2,
+  model: 'XLiu',
+  plate_number: 'RCG 115 F'
+}
+
+const busFour = {
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  name: 'YUTONGO',
   available_sits: 30,
   driver_id: 2,
   route_id: 2,
   model: 'XLiu',
-  plate_number: 'RCA125E'
+  plate_number: 'RCB 393 X'
 }
 
-const busThree = {
+const busFive = {
   createdAt: new Date(),
   updatedAt: new Date(),
   name: 'Horizon',
   available_sits: 90,
   driver_id: 3,
   route_id: 3,
-  model: 'XLiu',
-  plate_number: 'RCA125A'
+  model: 'Toyota',
+  plate_number: 'RCA 125 A'
 }
 
-const busFour = {
+const busSix = {
   createdAt: new Date(),
   updatedAt: new Date(),
   name: 'Safari',
   driver_id: 4,
   route_id: 4,
   available_sits: 30,
-  model: 'benz',
-  plate_number: 'RCA125F'
+  model: 'Toyota',
+  plate_number: 'RCA 125 F'
 }
 
-const busFive = {
+const busSeven = {
   createdAt: new Date(),
   updatedAt: new Date(),
   name: 'Volcano',
@@ -52,21 +74,22 @@ const busFive = {
   route_id: 5,
   available_sits: 30,
   model: 'Honda',
-  plate_number: 'RCA125C'
+  plate_number: 'RCA 125 C'
 
 }
 
-const busSix = {
+const busEight = {
   createdAt: new Date(),
   updatedAt: new Date(),
   name: 'Volcano',
-  route_id: 6,
   driver_id: 6,
+  route_id: 6,
   available_sits: 30,
   model: 'Honda',
-  plate_number: 'RCA129C'
+  plate_number: 'RCA 129 C'
 
 }
-const up = (queryInterface: QueryInterface) => queryInterface.bulkInsert('buses', [busOne, busTwo, busThree, busFour, busFive, busSix])
+
+const up = (queryInterface: QueryInterface) => queryInterface.bulkInsert('buses', [busOne, busTwo, busThree, busFour, busFive, busSix, busSeven, busEight])
 const down = (queryInterface: QueryInterface) => queryInterface.bulkDelete('buses', [], {})
 export { up, down }
